@@ -1,0 +1,12 @@
+{
+  "candidate": "vilcacariroger@gmail.com",
+  "candidate_name": "Aaron Roger Vilca Cari",
+  "models_and_tools": [
+    {"tool": "Codex", "model": "GPT-5"}
+  ],
+  "evaluated_file": "candidate_strategy.py",
+  "generated_artifacts": ["generated_artifacts/.gitkeep"],
+  "conversation_files": ["ai_conversations/session-01.md"],
+  "redactions": [],
+  "declaration": "He revisado y asumo la responsabilidad de la entrega final."
+}
