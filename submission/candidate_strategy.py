@@ -104,8 +104,8 @@ class CandidateStrategy(BaseDispatcherStrategy):
             slack = min(int((x.sla_deadline - context.now).total_seconds() // 60) for x in batch)
             vip = any(x.product == "VIP_BLACK" for x in batch)
             score = ((eta, carrier.operational_failure_bps, cost, carrier.carrier_id)
-                     if vip or slack <= eta + 180
-                     else (cost, eta, carrier.operational_failure_bps, carrier.carrier_id))
+                    if vip or slack <= eta + 180
+                    else (cost, eta, carrier.operational_failure_bps, carrier.carrier_id))
             candidates.append((score, carrier, batch))
         if not candidates:
             return None
